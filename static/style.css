@@ -1,0 +1,257 @@
+/* Modern Gradient Background */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f4f6f9 0%, #e8ebf2 100%);
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+    min-height: 100vh;
+}
+
+/* Improved Typography with Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Enhanced Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Interactive Input Fields */
+input[type="text"],
+input[type="email"] {
+    transition: all 0.3s ease;
+    border: 2px solid #e0e4e9;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Animated Buttons */
+button, input[type="submit"] {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* Modern Chat Container */
+#chat-box {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    padding: 1.5rem;
+    width: 70%;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    backdrop-filter: blur(10px);
+}
+
+/* Chat Message Styling */
+#chat-box p {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 12px;
+    animation: messageAppear 0.3s ease-out;
+}
+
+#chat-box strong {
+    color: #3498db;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* User/Bot Message Differentiation */
+.user-message {
+    background: #f0f8ff;
+    margin-left: 20%;
+    border: 1px solid #e1f0ff;
+}
+
+.bot-message {
+    background: #fff;
+    margin-right: 20%;
+    border: 1px solid #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #chat-box {
+        width: 90%;
+        height: 60vh;
+    }
+    
+    #user-input {
+        width: 70%;
+    }
+}
+
+/* Animations */
+@keyframes messageAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f5f8;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Headings */
+  h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form Styling */
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    margin: auto;
+    transition: all 0.3s ease;
+  }
+  
+  form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Submit Button & Other Buttons */
+  input[type="submit"],
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Chatbot Styling */
+  #chat-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 60%;
+    height: 350px;
+    overflow-y: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+  }
+  
+  #chat-box p {
+    margin: 10px 0;
+  }
+  
+  #chat-box strong {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* User Input */
+  #user-input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  #user-input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    #chat-box {
+      width: 100%;
+    }
+    #user-input {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    form {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    #chat-box {
+      height: 250px;
+    }
+  
+    #user-input {
+      width: 80%;
+    }
+  }
+  
